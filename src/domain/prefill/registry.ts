@@ -5,9 +5,9 @@ import { transitiveUpstreamSource } from './sources/transitiveUpstream';
 import type { PrefillDataSource } from './types';
 
 export const availableSources: Record<string, PrefillDataSource> = {
+  global: globalSource,
   'direct-upstream': directUpstreamSource,
   'transitive-upstream': transitiveUpstreamSource,
-  global: globalSource,
   static: staticSource,
 };
 
