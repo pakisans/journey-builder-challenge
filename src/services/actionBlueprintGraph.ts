@@ -1,6 +1,6 @@
 import type { ActionBlueprintGraphResponse } from './types';
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL as string;
+const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:3000';
 const TENANT_ID = import.meta.env.VITE_TENANT_ID as string;
 const BLUEPRINT_ID = import.meta.env.VITE_BLUEPRINT_ID as string;
 
